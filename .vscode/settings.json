@@ -1,0 +1,26 @@
+{
+  // Autor: Agua
+  "editor.formatOnPaste": false,
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "editor.find.addExtraSpaceOnTop": false,
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "workbench.colorTheme": "Default Dark Modern",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#9e1153",
+    "activityBar.background": "#faad3a",
+    "titleBar.activeBackground": "#7a2f2f",
+    "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#c92df8",
+      "activityBar.background": "#8a0578",
+      "titleBar.activeBackground": "#e68b16",
+      "titleBar.inactiveBackground": "#e68b16"
+    }
+  },
+  "editor.fontSize": 14,
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true
+}
