@@ -13,6 +13,7 @@ import { IntroModule } from './components/intro/intro.module';
 import { LoginModule } from './components/login/login.module';
 import { MenuModule } from './components/menu/menu.module';
 import { TimetableModule } from './components/timetable/timetable.module';
+import { FooterIntroModule } from './components/footer-intro/footer-intro.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,6 +30,7 @@ import { TimetableModule } from './components/timetable/timetable.module';
     LoginModule,
     MenuModule,
     TimetableModule,
+    FooterIntroModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
