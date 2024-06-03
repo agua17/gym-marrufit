@@ -4,14 +4,9 @@ import { CommonModule } from '@angular/common';
 import { IntroRoutingModule } from './intro-routing.module';
 import { IntroComponent } from './intro/intro.component';
 
-
 @NgModule({
-  declarations: [
-    IntroComponent
-  ],
-  imports: [
-    CommonModule,
-    IntroRoutingModule
-  ]
+  declarations: [IntroComponent],
+  imports: [CommonModule, IntroRoutingModule],
+  exports: [IntroComponent],
 })
-export class IntroModule { }
+export class IntroModule {}

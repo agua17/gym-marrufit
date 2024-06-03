@@ -4,14 +4,9 @@ import { CommonModule } from '@angular/common';
 import { InformationRoutingModule } from './information-routing.module';
 import { InformationComponent } from './information/information.component';
 
-
 @NgModule({
-  declarations: [
-    InformationComponent
-  ],
-  imports: [
-    CommonModule,
-    InformationRoutingModule
-  ]
+  declarations: [InformationComponent],
+  imports: [CommonModule, InformationRoutingModule],
+  exports: [InformationComponent],
 })
-export class InformationModule { }
+export class InformationModule {}

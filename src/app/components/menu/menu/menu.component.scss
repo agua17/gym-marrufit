@@ -1,0 +1,37 @@
+/* menu.component.scss */
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  padding: 20px;
+
+  &__option {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffccb3; /* Fondo del menú */
+    padding: 10px;
+    border-left: 2px solid white;
+  }
+
+  &__option button {
+    background-color: #ffccb3; /* Color de fondo de los botones del menú */
+    color: #000000; /* Color del texto */
+    text-decoration: none;
+    font-family: "Arial", sans-serif; /* Cambia a la fuente que necesites */
+    font-weight: bold;
+    border: 2px dashed white;
+    margin-bottom: 10px; /* Espacio entre botones */
+    padding: 10px 20px;
+    transition: background-color 0.3s, border 0.3s;
+  }
+
+  &__option button:hover {
+    background-color: #ffd1b3; /* Color de fondo al pasar el mouse */
+    border-color: white;
+  }
+}
