@@ -22,6 +22,19 @@
     height: 180vh;
   }
 
+  &__footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    vertical-align: bottom;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  &__footer-register {
+    width: 58%;
+  }
+
   &__text {
     color: rgb(36, 4, 36);
     font-family: "Retosta";
