@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  flex-direction: column; /* Por defecto en dispositivos móviles */
+
+  &__photo {
+    align-self: center;
+    width: 100%;
+    object-fit: cover;
+    height: 140vh;
+
+    @media screen and (min-width: 700px) {
+      width: 50%; /* Ajuste para pantallas más grandes */
+      height: 100vh;
+      align-self: flex-start;
+    }
+  }
+
+  &__text {
+    color: purple;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    @media screen and (min-width: 700px) {
+      width: 50%;
+      height: 100vh; /* Ajuste de altura para pantallas más grandes */
+    }
+  }
+}

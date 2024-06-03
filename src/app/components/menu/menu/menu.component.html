@@ -1,5 +1,9 @@
 <div class="menu">
-  <nav *ngIf="showNavBar" class="menu__option">
+  <nav
+    *ngIf="showNavBar"
+    (click)="showNavBar = !showNavBar"
+    class="menu__option"
+  >
     <button class="menu__option-1" [routerLink]="'/'">Principal</button>
     <button class="menu__option-2" [routerLink]="'history-page'">
       Conocenos
