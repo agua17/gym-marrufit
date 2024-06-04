@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Retosta";
+  src: url("../../../../assets/fonts/Retosta.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Minggola";
+  src: url("../../../../assets/fonts/Minggola.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  max-width: 300px;
+  margin: 16px;
+
+  &__icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    font-family: "Retosta";
+  }
+
+  &__description {
+    font-size: 1em;
+    margin: 0.5em 0;
+  }
+
+  &__tariff {
+    font-family: "Minggola";
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #110414;
+  }
+}
