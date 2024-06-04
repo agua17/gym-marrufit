@@ -13,6 +13,7 @@ import { IntroModule } from './components/intro/intro.module';
 import { LoginModule } from './components/login/login.module';
 import { MenuModule } from './components/menu/menu.module';
 import { TimetableModule } from './components/timetable/timetable.module';
+import { GymsesionModule } from './components/gymsesion/gymsesion.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,6 +30,9 @@ import { TimetableModule } from './components/timetable/timetable.module';
     LoginModule,
     MenuModule,
     TimetableModule,
+    GymsesionModule,
+    InformationModule,
+    MenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

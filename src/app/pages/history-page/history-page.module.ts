@@ -3,15 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { HistoryPageRoutingModule } from './history-page-routing.module';
 import { HistoryPageComponent } from './history-page/history-page.component';
-
+import { InformationModule } from '../../components/information/information.module';
+import { MenuModule } from '../../components/menu/menu.module';
 
 @NgModule({
-  declarations: [
-    HistoryPageComponent
-  ],
+  declarations: [HistoryPageComponent],
   imports: [
     CommonModule,
-    HistoryPageRoutingModule
-  ]
+    HistoryPageRoutingModule,
+    InformationModule,
+    MenuModule,
+  ],
 })
-export class HistoryPageModule { }
+export class HistoryPageModule {}

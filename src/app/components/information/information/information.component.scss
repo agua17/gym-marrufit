@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Retosta";
+  src: url("../../../../assets/fonts/Retosta.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-family: "Retosta";
+    font-size: 24px;
+  }
+}
