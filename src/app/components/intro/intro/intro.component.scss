@@ -1,70 +1,16 @@
-@font-face {
-  font-family: "Minggola";
-  src: url("../../../../assets/fonts/Minggola.ttf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Retosta";
-  src: url("../../../../assets/fonts/Retosta.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
+:host {
+  display: block;
+  height: 100vh; /* Toda la altura de la página */
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
-
-  &__photo {
-    align-self: flex-start;
-    width: 100%;
-    object-fit: cover;
-    height: 180vh;
-  }
-
-  &__footer {
-    width: 100%;
-    height: auto;
-    display: flex;
-    vertical-align: bottom;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  &__footer-register {
-    width: 58%;
-  }
-
-  &__text {
-    color: rgb(36, 4, 36);
-    font-family: "Retosta";
-    font-size: 40px;
-    text-align: center;
-    padding-right: 20px;
-    padding-top: 20px;
-  }
-
-  &__description {
-    color: rgb(36, 4, 36);
-    font-family: "Minggola";
-    font-size: 24px;
-    text-align: center;
-    padding-right: 20px;
-    padding-top: 20px;
-  }
-
-  @media screen and (min-width: 700px) {
-    flex-direction: row; /* Para pantallas más grandes */
-
-    &__photo {
-      width: 50%; /* La imagen ocupa el 50% del ancho */
-      height: 140vh; /* Ocupa toda la altura de la ventana */
-      align-self: flex-start;
-    }
-
-    &__text {
-      width: 50%; /* El texto ocupa el 50% del ancho */
-      height: 100vh; /* Ocupa toda la altura de la ventana */
-    }
-  }
+  margin: 0;
+  padding: 0;
+  width: 50vw; /* La mitad del ancho de la página */
+  height: 100vh; /* Toda la altura de la página */
+  object-fit: cover; /* Ajuste de la imagen para cubrir el contenedor */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
 }
