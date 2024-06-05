@@ -1,14 +1,14 @@
+<!-- En tu archivo .html del componente -->
 <section class="options">
   <div class="options__intro">
     <p>NUESTROS SERVICIOS SON:</p>
   </div>
-  <div class="card">
+  <div class="card" *ngFor="let item of sesion">
     <div class="card-content">
       <h2 class="card-title">{{ item.title }}</h2>
       <img
         class="card-icon"
-        [src]="item.icon"
-        alt="Icono de {{ item.title }}"
+        [src]="'../../../../assets/icons/entreno_personal.png'"
       />
       <p class="card-description">{{ item.description }}</p>
       <p class="card-tariff">Tarifa: {{ item.price }}</p>
