@@ -1,15 +1,18 @@
+<!-- En tu archivo .html del componente -->
 <section class="options">
   <div class="options__intro">
     <p>NUESTROS SERVICIOS SON:</p>
   </div>
   <div class="card">
-    <div class="card-icon">
-      <img [src]="icon" alt="Icono del Servicio" />
-    </div>
     <div class="card-content">
-      <h2 class="card-title">{{ title }}</h2>
-      <p class="card-description">{{ description }}</p>
-      <p class="card-tariff">Tarifa: {{ tariff }}</p>
+      <h2 class="card-title">{{ item.title }}</h2>
+      <img
+        class="card-icon"
+        [src]="item.icon"
+        alt="Icono de {{ item.title }}"
+      />
+      <p class="card-description">{{ item.description }}</p>
+      <p class="card-tariff">Tarifa: {{ item.price }}</p>
     </div>
   </div>
 </section>

@@ -6,24 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./activities-page.component.scss'],
 })
 export class ActivitiesPageComponent {
-  services = [
+  public sesion = [
+    {
+      title: 'ENTRENO PERSONAL',
+      description:
+        '¿No sabes entrenar solo? Este es tu servicio, ya que estarás acompañado en todo tu entramiento por un profesional que te ayudará y guiará en toda la sesión',
+      price: '68€/mes',
+    },
     {
       icon: 'path/to/icon1.png',
       title: 'Servicio 1',
       description: 'Descripción breve del servicio 1.',
-      tariff: '$20/mes',
+      price: '$20/mes',
     },
     {
-      icon: 'path/to/icon2.png',
-      title: 'Servicio 2',
-      description: 'Descripción breve del servicio 2.',
-      tariff: '$30/mes',
-    },
-    {
-      icon: 'path/to/icon3.png',
-      title: 'Servicio 3',
-      description: 'Descripción breve del servicio 3.',
-      tariff: '$40/mes',
+      icon: 'path/to/icon1.png',
+      title: 'Servicio 1',
+      description: 'Descripción breve del servicio 1.',
+      price: '$20/mes',
     },
   ];
+  item: any;
 }

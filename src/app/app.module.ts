@@ -14,6 +14,7 @@ import { LoginModule } from './components/login/login.module';
 import { MenuModule } from './components/menu/menu.module';
 import { TimetableModule } from './components/timetable/timetable.module';
 import { GymsesionModule } from './components/gymsesion/gymsesion.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
@@ -33,6 +34,7 @@ import { GymsesionModule } from './components/gymsesion/gymsesion.module';
     GymsesionModule,
     InformationModule,
     MenuModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

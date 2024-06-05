@@ -1,10 +1,2 @@
 <app-menu></app-menu>
-<app-gymsesion
-  *ngFor="let service of services"
-  [icon]="''"
-  [title]="service.title"
-  [description]="service.description"
-  [tariff]="service.tariff"
->
-  ></app-gymsesion
->
+<app-gymsesion *ngFor="let sesion of item" {{item.icon}}> ></app-gymsesion>
