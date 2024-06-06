@@ -1,16 +1,37 @@
-:host {
-  display: block;
-  height: 100vh; /* Toda la altura de la página */
+@font-face {
+  font-family: "Retosta";
+  src: url("../../../../assets/fonts/Retosta.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Baristo";
+  src: url("../../../../assets/fonts/Baristo.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .header {
-  margin: 0;
-  padding: 0;
-  width: 50vw; /* La mitad del ancho de la página */
-  height: 100vh; /* Toda la altura de la página */
-  object-fit: cover; /* Ajuste de la imagen para cubrir el contenedor */
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+
+  &__text {
+    margin-top: 60px;
+    margin-right: 20px;
+  }
+
+  &__text-title {
+    text-align: center;
+    font-family: "Retosta";
+    font-size: 48px;
+
+    line-height: 1.5;
+  }
+  &__text-content {
+    padding-top: 20px;
+    font-family: "Retosta";
+    font-size: 20px;
+  }
 }
