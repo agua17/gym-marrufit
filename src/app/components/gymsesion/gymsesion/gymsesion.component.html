@@ -9,13 +9,14 @@
       [ngClass]="{ selected: selectedCard === item }"
     >
       <button class="card-content" (click)="selectCard(item)">
-        <h2 class="card-title">{{ item.title }}</h2>
         <img
           class="card-icon"
           [src]="'../../../../assets/icons/entreno_personal.png'"
         />
+        <h2 class="card-title">{{ item.title }}</h2>
         <p class="card-description">{{ item.description }}</p>
         <p class="card-tariff">Tarifa: {{ item.price }}</p>
+        <button>SELECCIONAR</button>
       </button>
     </div>
   </div>

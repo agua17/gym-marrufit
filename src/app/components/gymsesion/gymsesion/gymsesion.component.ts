@@ -9,23 +9,25 @@ export class GymsesionComponent implements OnInit {
   @Input()
   public sesion = [
     {
-      title: 'ENTRENO PERSONAL',
       icon: "''",
+      title: 'ENTRENO PERSONAL',
       description:
         '¿No sabes entrenar solo? Este es tu servicio, ya que estarás acompañado en todo tu entramiento por un profesional que te ayudará y guiará en toda la sesión',
       price: '68€/mes',
     },
     {
-      icon: 'path/to/icon1.png',
-      title: 'Servicio 1',
-      description: 'Descripción breve del servicio 1.',
-      price: '$20/mes',
+      icon: "''",
+      title: 'ENTRENO PERSONAL',
+      description:
+        '¿No sabes entrenar solo? Este es tu servicio, ya que estarás acompañado en todo tu entramiento por un profesional que te ayudará y guiará en toda la sesión',
+      price: '68€/mes',
     },
     {
-      icon: 'path/to/icon1.png',
-      title: 'Servicio 1',
-      description: 'Descripción breve del servicio 1.',
-      price: '$20/mes',
+      icon: "''",
+      title: 'ENTRENO PERSONAL',
+      description:
+        '¿No sabes entrenar solo? Este es tu servicio, ya que estarás acompañado en todo tu entramiento por un profesional que te ayudará y guiará en toda la sesión',
+      price: '68€/mes',
     },
   ];
 
