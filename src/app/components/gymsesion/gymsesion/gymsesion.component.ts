@@ -30,4 +30,10 @@ export class GymsesionComponent implements OnInit {
   ];
 
   ngOnInit(): void {}
+  selectedCard: any;
+
+  selectCard(item: any) {
+    this.selectedCard = item;
+    console.log('Tarjeta seleccionada:', item);
+  }
 }
