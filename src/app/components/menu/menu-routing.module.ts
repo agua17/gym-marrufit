@@ -17,6 +17,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'registro',
+    loadChildren: () =>
+      import('../../pages/register-page/register-page.module').then(
+        (m) => m.RegisterPageModule
+      ),
+  },
+  {
     path: 'horarios',
     loadChildren: () =>
       import('../../pages/timetable-page/timetable-page.module').then(

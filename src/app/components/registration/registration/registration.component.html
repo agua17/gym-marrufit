@@ -22,6 +22,10 @@
   </mat-form-field>
   <button mat-button mat-flat-button color="primary">Enviar</button>
   <div class="flex justify-content-end mt-5">
-    <a routerLink="../../../pages/login-page">¿Ya estás registrado?</a>
+    <nav *ngIf="showNavBar" class="menu__option">
+      <button class="menu__option-4" [routerLink]="'login'">
+        ¿Ya estás registrado?
+      </button>
+    </nav>
   </div>
 </div>

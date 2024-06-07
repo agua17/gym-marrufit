@@ -1,19 +1,7 @@
 <div class="menu">
   <nav *ngIf="showNavBar" class="menu__option">
-    <button
-      (click)="showNavBar = !showNavBar"
-      class="menu__option-1"
-      [routerLink]="'/'"
-    >
-      Principal
-    </button>
-    <button
-      (click)="showNavBar = !showNavBar"
-      class="menu__option-2"
-      [routerLink]="'conocenos'"
-    >
-      Conocenos
-    </button>
+    <button class="menu__option-1" [routerLink]="'/'">Principal</button>
+    <button class="menu__option-2" [routerLink]="'conocenos'">Conocenos</button>
     <button class="menu__option-3" [routerLink]="'servicios'">Servicios</button>
     <button class="menu__option-4" [routerLink]="'login'">
       Iniciar Sesión
