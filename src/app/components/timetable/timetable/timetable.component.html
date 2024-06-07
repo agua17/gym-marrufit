@@ -1,1 +1,24 @@
-<p>timetable works!</p>
+<div class="container">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let clase of clase">
+        <td>{{ clase.hora }}</td>
+        <td>{{ clase.lunes }}</td>
+        <td>{{ clase.martes }}</td>
+        <td>{{ clase.miercoles }}</td>
+        <td>{{ clase.jueves }}</td>
+        <td>{{ clase.viernes }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
