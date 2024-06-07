@@ -1,17 +1,51 @@
-.container {
+/* src/app/horario/horario.component.css */
+.schedule-container {
+  width: 100%;
+  overflow-x: auto;
   margin-top: 20px;
 }
 
-.table {
+.schedule-table {
   width: 100%;
+  border-collapse: collapse;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.table th,
-.table td {
+.schedule-table thead th {
+  background-color: #ff69b4;
+  color: white;
   padding: 10px;
+  font-size: 16px;
 }
 
-.table thead th {
-  background-color: #f4f4f4;
+.schedule-table tbody td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.schedule-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.schedule-table tbody td {
+  background-color: #fff0f5;
+}
+
+.schedule-table tbody td:not(:first-child) {
+  font-weight: bold;
+}
+
+.schedule-table tbody td:empty {
+  background-color: #ffebcd;
+}
+
+.schedule-table tbody td:first-child {
+  background-color: #ffe4e1;
+  font-weight: bold;
 }

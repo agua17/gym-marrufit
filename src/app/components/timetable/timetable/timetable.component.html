@@ -1,5 +1,5 @@
-<div class="container">
-  <table class="table table-bordered">
+<div class="schedule-container">
+  <table class="schedule-table">
     <thead>
       <tr>
         <th>Hora</th>
@@ -13,11 +13,21 @@
     <tbody>
       <tr *ngFor="let clase of clase">
         <td>{{ clase.hora }}</td>
-        <td>{{ clase.lunes }}</td>
-        <td>{{ clase.martes }}</td>
-        <td>{{ clase.miercoles }}</td>
-        <td>{{ clase.jueves }}</td>
-        <td>{{ clase.viernes }}</td>
+        <td (click)="openModal(clase.lunes, clase.hora)">
+          <i [class]="clase.lunes.icono"></i> {{ clase.lunes.nombre }}
+        </td>
+        <td (click)="openModal(clase.martes, clase.hora)">
+          <i [class]="clase.martes.icono"></i> {{ clase.martes.nombre }}
+        </td>
+        <td (click)="openModal(clase.miercoles, clase.hora)">
+          <i [class]="clase.miercoles.icono"></i> {{ clase.miercoles.nombre }}
+        </td>
+        <td (click)="openModal(clase.jueves, clase.hora)">
+          <i [class]="clase.jueves.icono"></i> {{ clase.jueves.nombre }}
+        </td>
+        <td (click)="openModal(clase.viernes, clase.hora)">
+          <i [class]="clase.viernes.icono"></i> {{ clase.viernes.nombre }}
+        </td>
       </tr>
     </tbody>
   </table>
