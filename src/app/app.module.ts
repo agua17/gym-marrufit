@@ -33,7 +33,6 @@ import { GymsesionModule } from './components/gymsesion/gymsesion.module';
     TimetableModule,
     GymsesionModule,
     InformationModule,
-    MenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
