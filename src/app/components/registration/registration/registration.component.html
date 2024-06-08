@@ -2,25 +2,62 @@
   <span class="login__title">REGISTRATE</span>
   <mat-form-field>
     <mat-label>Nombre</mat-label>
-    <input type="text" matInput placeholder="Nombre completo" />
+    <input
+      type="text"
+      id="nombre"
+      name="nombre"
+      [(ngModel)]="user.nombre"
+      matInput
+      placeholder="Nombre completo"
+    />
   </mat-form-field>
   <mat-form-field>
     <mat-label>Email</mat-label>
-    <input type="email" matInput placeholder="Email" />
+    <input
+      type="email"
+      id="email"
+      name="email"
+      [(ngModel)]="user.email"
+      matInput
+      placeholder="Email"
+    />
   </mat-form-field>
   <mat-form-field>
     <mat-label>Usuario</mat-label>
-    <input type="text" matInput placeholder="Nombre de Usuario" />
+    <input
+      type="text"
+      id="usuario"
+      name="usuario"
+      [(ngModel)]="user.usuario"
+      matInput
+      placeholder="Nombre de Usuario"
+    />
   </mat-form-field>
   <mat-form-field>
     <mat-label>Teléfono</mat-label>
-    <input type="number" matInput placeholder="Número de teléfono" />
+    <input
+      type="number"
+      id="telefono"
+      name="telefono"
+      [(ngModel)]="user.telefono"
+      matInput
+      placeholder="Número de teléfono"
+    />
   </mat-form-field>
   <mat-form-field>
     <mat-label>Contraseña</mat-label>
-    <input type="password" matInput placeholder="Contraseña" />
+    <input
+      type="password"
+      id="password"
+      name="password"
+      [(ngModel)]="user.password"
+      matInput
+      placeholder="Contraseña"
+    />
   </mat-form-field>
-  <button mat-button mat-flat-button color="primary">Enviar</button>
+  <button mat-button mat-flat-button color="primary" (click)="saveUser()">
+    Enviar
+  </button>
   <div class="flex justify-content-end mt-5">
     <nav *ngIf="showNavBar" class="menu__option">
       <button class="menu__option-4" [routerLink]="'login'">
