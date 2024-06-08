@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Retosta";
+  src: url("../../../../assets/fonts/Retosta.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Baristo";
+  src: url("../../../../assets/fonts/Baristo.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+
+  &__photo {
+    height: 100%;
+  }
+
+  &__text {
+    margin-top: 60px;
+    margin-right: 20px;
+  }
+
+  &__text-title {
+    text-align: center;
+    font-family: "Retosta";
+    font-size: 48px;
+
+    line-height: 1.5;
+  }
+  &__text-content {
+    padding-top: 20px;
+    font-family: "Retosta";
+    font-size: 20px;
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__icon-location {
+    padding-bottom: 560px;
+    padding-right: 260px;
+    width: 200px;
+    height: 200px;
+  }
+  &__icon-register {
+    padding-bottom: 500px;
+    padding-right: 160px;
+    width: 340px;
+    height: 340px;
+  }
+}

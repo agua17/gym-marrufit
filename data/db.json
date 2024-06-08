@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "usuario": "Agua",
+      "email": "aguassantas@gmail.com"
+    }
+  ],
+  "clases": [
+    {
+      "id": "lunes",
+      "hora": "07:30",
+      "clase": "Pilates",
+      "icono": "../src/assets/icons/entreno_personal.png",
+      "limite": "20",
+      "inscritos": "0"
+    },
+    {
+      "id": "martes",
+      "hora": "07:30",
+      "clase": "Pilates",
+      "icono": "../src/assets/icons/entreno_personal.png",
+      "limite": "20",
+      "inscritos": "0"
+    },
+    {
+      "id": "miercoles",
+      "hora": "07:30",
+      "clase": "Pilates",
+      "icono": "../src/assets/icons/entreno_personal.png",
+      "limite": "20",
+      "inscritos": "0"
+    },
+    {
+      "id": "jueves",
+      "hora": "07:30",
+      "clase": "Pilates",
+      "icono": "../src/assets/icons/entreno_personal.png",
+      "limite": "20",
+      "inscritos": "0"
+    }
+  ]
+}

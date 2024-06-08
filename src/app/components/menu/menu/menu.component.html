@@ -1,0 +1,23 @@
+<div *ngIf="this.usuario.id > 0">Bienvenido {{ usuario.nombre }}</div>
+<div class="menu">
+  <nav *ngIf="showNavBar" class="menu__option">
+    <button class="menu__option-1" [routerLink]="'/'">Principal</button>
+    <button class="menu__option-2" [routerLink]="'conocenos'">Conocenos</button>
+    <button class="menu__option-3" [routerLink]="'servicios'">Servicios</button>
+    <button
+      class="menu__option-4"
+      [routerLink]="'login'"
+      *ngIf="!(this.usuario.id > 0)"
+    >
+      Iniciar Sesión
+    </button>
+    <button
+      class="menu__option-4"
+      (click)="logout()"
+      *ngIf="this.usuario.id > 0"
+    >
+      Salir
+    </button>
+    <button class="menu__option-5" [routerLink]="'horarios'">Horarios</button>
+  </nav>
+</div>

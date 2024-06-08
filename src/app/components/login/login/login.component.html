@@ -1,0 +1,35 @@
+<div class="login">
+  <span class="login__title">Iniciar Sesión </span>
+  <mat-form-field>
+    <mat-label>Usuario</mat-label>
+    <input
+      type="text"
+      id="usuario"
+      name="usuario"
+      [(ngModel)]="usuario"
+      matInput
+      placeholder="Nombre de Usuario"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Contraseña</mat-label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      [(ngModel)]="password"
+      matInput
+      placeholder="Contraseña"
+    />
+  </mat-form-field>
+  <button mat-button mat-flat-button color="primary" (click)="login()">
+    Enviar
+  </button>
+  <div class="flex justify-content-end mt-5">
+    <nav *ngIf="showNavBar" class="menu__option">
+      <button class="menu__option-4" [routerLink]="'registro'">
+        ¿Quieres registrarte?
+      </button>
+    </nav>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<section class="options">
+  <div class="options__intro">
+    <p>NUESTROS SERVICIOS SON:</p>
+  </div>
+  <div class="cards-container">
+    <div
+      class="card"
+      *ngFor="let item of services"
+      [ngClass]="{ selected: selectedCard === item.id }"
+    >
+      <button class="card-content" (click)="selectCard(item.id)">
+        <img
+          class="card-icon"
+          [src]="'../../../../assets/icons/entreno_personal.png'"
+        />
+        <h2 class="card-title">{{ item.nombre }}</h2>
+        <p class="card-description">{{ item.descripcion }}</p>
+        <p class="card-tariff">Tarifa: {{ item.precio }}</p>
+        <button (click)="seleccionarServicio(item.id)">SELECCIONAR</button>
+      </button>
+    </div>
+  </div>
+</section>
