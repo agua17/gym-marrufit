@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th>Hora</th>
+      <th>Lunes</th>
+      <th>Martes</th>
+      <th>Miércoles</th>
+      <th>Jueves</th>
+      <th>Viernes</th>
+      <th>Sábado</th>
+      <th>Domingo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let hour of hours">
+      <td>{{ hour }}</td>
+      <td *ngFor="let day of days">
+        <button (click)="registerForClass(day, hour)">Registrar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

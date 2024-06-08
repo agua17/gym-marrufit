@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MarrufitService } from '../../../services/marrufit.service';
 
 @Component({
   selector: 'app-registration',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class RegistrationComponent {
   showNavBar: boolean = true;
+  constructor(private marrufitService: MarrufitService) {}
 }
