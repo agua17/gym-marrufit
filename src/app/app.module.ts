@@ -15,6 +15,8 @@ import { MenuModule } from './components/menu/menu.module';
 import { TimetableModule } from './components/timetable/timetable.module';
 import { GymsesionModule } from './components/gymsesion/gymsesion.module';
 import { HttpClientModule } from '@angular/common/http';
+import { UserDetailPageModule } from './pages/user-detail-page/user-detail-page.module';
+import { UserDetailModule } from './components/user-detail/user-detail.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -35,6 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     GymsesionModule,
     InformationModule,
     HttpClientModule,
+    UserDetailPageModule,
+    UserDetailModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

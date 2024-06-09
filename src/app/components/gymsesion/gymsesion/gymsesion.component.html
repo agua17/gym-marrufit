@@ -1,6 +1,6 @@
-<section class="options">
+<section class="options container">
   <div class="options__intro">
-    <p>NUESTROS SERVICIOS SON:</p>
+    <h1>NUESTROS SERVICIOS SON:</h1>
   </div>
   <div class="cards-container">
     <div
@@ -16,7 +16,9 @@
         <h2 class="card-title">{{ item.nombre }}</h2>
         <p class="card-description">{{ item.descripcion }}</p>
         <p class="card-tariff">Tarifa: {{ item.precio }}</p>
-        <button (click)="seleccionarServicio(item.id)">SELECCIONAR</button>
+        <button class="btn btn-primary" (click)="seleccionarServicio(item.id)">
+          SELECCIONAR
+        </button>
       </button>
     </div>
   </div>

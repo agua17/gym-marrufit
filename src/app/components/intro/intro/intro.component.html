@@ -15,12 +15,19 @@
   </div>
 </div>
 <div class="header__icon">
-  <img
-    class="header__icon-location"
-    src="../../../../assets/images/ubicacion.svg"
-  />
+  <div class="tooltipCustom">
+    <img
+      class="header__icon-location"
+      alt=""
+      src="../../../../assets/images/ubicacion.svg"
+    />
+    <span class="tooltiptext"
+      >Calle Nuestra Señora del Carmen, 4, 41720, Sevilla</span
+    >
+  </div>
   <img
     class="header__icon-register"
     src="../../../../assets/images/registro.svg"
+    [routerLink]="'/registro'"
   />
 </div>

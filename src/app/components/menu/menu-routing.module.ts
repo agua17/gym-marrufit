@@ -44,6 +44,13 @@ const routes: Routes = [
         (m) => m.ActivitiesPageModule
       ),
   },
+  {
+    path: 'detalleUsuario',
+    loadChildren: () =>
+      import('../../pages/user-detail-page/user-detail-page.module').then(
+        (m) => m.UserDetailPageModule
+      ),
+  },
 
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];

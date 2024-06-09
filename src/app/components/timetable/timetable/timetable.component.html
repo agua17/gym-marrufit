@@ -1,123 +1,133 @@
-<div style="margin: 20px">
-  <label>Por favor, seleccione un servicio</label>
-  <select
-    id="servicio"
-    name="servicio"
-    [(ngModel)]="servicioSeleccionado"
-    (change)="cargarHorarioServicio()"
-  >
-    <option *ngFor="let servicio of services" [value]="servicio.id">
-      {{ servicio.nombre }}
-    </option>
-  </select>
+<div class="mx-8">
+  <div style="margin: 20px" class="col-sm-3">
+    <label>Por favor, seleccione un servicio</label>
+    <select
+      id="servicio"
+      name="servicio"
+      class="form-select"
+      [(ngModel)]="servicioSeleccionado"
+      (change)="cargarHorarioServicio()"
+    >
+      <option *ngFor="let servicio of services" [value]="servicio.id">
+        {{ servicio.nombre }}
+      </option>
+    </select>
+  </div>
+  <table class="table" *ngIf="horarios && horarios.length > 0">
+    <thead class="table-light">
+      <tr>
+        <th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+        <th>Sábado</th>
+        <th>Domingo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let hour of hours">
+        <td style="width: 10%" class="table-light">{{ hour }}</td>
+        <td style="width: 12%">
+          <div *ngFor="let horario of horarios">
+            <div *ngIf="horario.dia == 'Lunes' && horario.hora == hour">
+              <label class="col-sm-12">{{ horario.nombre }}</label>
+              <button
+                class="btn btn-secondary"
+                *ngIf="!this.horariosRegistrados.includes(horario.id)"
+                (click)="registrarUsuarioHorario(horario.id)"
+              >
+                Registrar
+              </button>
+            </div>
+          </div>
+        </td>
+        <td style="width: 12%">
+          <div *ngFor="let horario of horarios">
+            <div *ngIf="horario.dia == 'Martes' && horario.hora == hour">
+              <label class="col-sm-12">{{ horario.nombre }}</label>
+              <button
+                class="btn btn-secondary"
+                *ngIf="!this.horariosRegistrados.includes(horario.id)"
+                (click)="registrarUsuarioHorario(horario.id)"
+              >
+                Registrar
+              </button>
+            </div>
+          </div>
+        </td>
+        <td style="width: 12%">
+          <div *ngFor="let horario of horarios">
+            <div *ngIf="horario.dia == 'Miercoles' && horario.hora == hour">
+              <label class="col-sm-12">{{ horario.nombre }}</label>
+              <button
+                class="btn btn-secondary"
+                *ngIf="!this.horariosRegistrados.includes(horario.id)"
+                (click)="registrarUsuarioHorario(horario.id)"
+              >
+                Registrar
+              </button>
+            </div>
+          </div>
+        </td>
+        <td style="width: 12%">
+          <div *ngFor="let horario of horarios">
+            <div *ngIf="horario.dia == 'Jueves' && horario.hora == hour">
+              <label class="col-sm-12">{{ horario.nombre }}</label>
+              <button
+                class="btn btn-secondary"
+                *ngIf="!this.horariosRegistrados.includes(horario.id)"
+                (click)="registrarUsuarioHorario(horario.id)"
+              >
+                Registrar
+              </button>
+            </div>
+          </div>
+        </td>
+        <td style="width: 12%">
+          <div *ngFor="let horario of horarios">
+            <div *ngIf="horario.dia == 'Viernes' && horario.hora == hour">
+              <label class="col-sm-12">{{ horario.nombre }}</label>
+              <button
+                class="btn btn-secondary"
+                *ngIf="!this.horariosRegistrados.includes(horario.id)"
+                (click)="registrarUsuarioHorario(horario.id)"
+              >
+                Registrar
+              </button>
+            </div>
+          </div>
+        </td>
+        <td style="width: 12%">
+          <div *ngFor="let horario of horarios">
+            <div *ngIf="horario.dia == 'Sabado' && horario.hora == hour">
+              <label class="col-sm-12">{{ horario.nombre }}</label>
+              <button
+                class="btn btn-secondary"
+                *ngIf="!this.horariosRegistrados.includes(horario.id)"
+                (click)="registrarUsuarioHorario(horario.id)"
+              >
+                Registrar
+              </button>
+            </div>
+          </div>
+        </td>
+        <td style="width: 12%">
+          <div *ngFor="let horario of horarios">
+            <div *ngIf="horario.dia == 'Domingo' && horario.hora == hour">
+              <label class="col-sm-12">{{ horario.nombre }}</label>
+              <button
+                class="btn btn-secondary"
+                *ngIf="!this.horariosRegistrados.includes(horario.id)"
+                (click)="registrarUsuarioHorario(horario.id)"
+              >
+                Registrar
+              </button>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-<table *ngIf="horarios && horarios.length > 0">
-  <thead>
-    <tr>
-      <th>Hora</th>
-      <th>Lunes</th>
-      <th>Martes</th>
-      <th>Miércoles</th>
-      <th>Jueves</th>
-      <th>Viernes</th>
-      <th>Sábado</th>
-      <th>Domingo</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let hour of hours">
-      <td style="width: 10%">{{ hour }}</td>
-      <td style="width: 12%">
-        <div *ngFor="let horario of horarios">
-          <div *ngIf="horario.dia == 'Lunes' && horario.hora == hour">
-            {{ horario.nombre }}
-            <button
-              *ngIf="!this.horariosRegistrados.includes(horario.id)"
-              (click)="registrarUsuarioHorario(horario.id)"
-            >
-              Registrar
-            </button>
-          </div>
-        </div>
-      </td>
-      <td style="width: 12%">
-        <div *ngFor="let horario of horarios">
-          <div *ngIf="horario.dia == 'Martes' && horario.hora == hour">
-            {{ horario.nombre }}
-            <button
-              *ngIf="!this.horariosRegistrados.includes(horario.id)"
-              (click)="registrarUsuarioHorario(horario.id)"
-            >
-              Registrar
-            </button>
-          </div>
-        </div>
-      </td>
-      <td style="width: 12%">
-        <div *ngFor="let horario of horarios">
-          <div *ngIf="horario.dia == 'Miercoles' && horario.hora == hour">
-            {{ horario.nombre }}
-            <button
-              *ngIf="!this.horariosRegistrados.includes(horario.id)"
-              (click)="registrarUsuarioHorario(horario.id)"
-            >
-              Registrar
-            </button>
-          </div>
-        </div>
-      </td>
-      <td style="width: 12%">
-        <div *ngFor="let horario of horarios">
-          <div *ngIf="horario.dia == 'Jueves' && horario.hora == hour">
-            {{ horario.nombre }}
-            <button
-              *ngIf="!this.horariosRegistrados.includes(horario.id)"
-              (click)="registrarUsuarioHorario(horario.id)"
-            >
-              Registrar
-            </button>
-          </div>
-        </div>
-      </td>
-      <td style="width: 12%">
-        <div *ngFor="let horario of horarios">
-          <div *ngIf="horario.dia == 'Viernes' && horario.hora == hour">
-            {{ horario.nombre }}
-            <button
-              *ngIf="!this.horariosRegistrados.includes(horario.id)"
-              (click)="registrarUsuarioHorario(horario.id)"
-            >
-              Registrar
-            </button>
-          </div>
-        </div>
-      </td>
-      <td style="width: 12%">
-        <div *ngFor="let horario of horarios">
-          <div *ngIf="horario.dia == 'Sabado' && horario.hora == hour">
-            {{ horario.nombre }}
-            <button
-              *ngIf="!this.horariosRegistrados.includes(horario.id)"
-              (click)="registrarUsuarioHorario(horario.id)"
-            >
-              Registrar
-            </button>
-          </div>
-        </div>
-      </td>
-      <td style="width: 12%">
-        <div *ngFor="let horario of horarios">
-          <div *ngIf="horario.dia == 'Domingo' && horario.hora == hour">
-            {{ horario.nombre }}
-            <button
-              *ngIf="!this.horariosRegistrados.includes(horario.id)"
-              (click)="registrarUsuarioHorario(horario.id)"
-            >
-              Registrar
-            </button>
-          </div>
-        </div>
-      </td>
-    </tr>
-  </tbody>
-</table>

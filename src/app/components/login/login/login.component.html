@@ -27,7 +27,12 @@
   </button>
   <div class="flex justify-content-end mt-5">
     <nav *ngIf="showNavBar" class="menu__option">
-      <button class="menu__option-4" [routerLink]="'registro'">
+      <button
+        mat-button
+        mat-flat-button
+        color="secondary"
+        [routerLink]="'registro'"
+      >
         ¿Quieres registrarte?
       </button>
     </nav>

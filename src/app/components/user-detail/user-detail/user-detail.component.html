@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row mb-3">
+    <h1 class="col-sm-12 col-form-label text-center">
+      Bienvenido {{ usuario.nombre }}
+    </h1>
+  </div>
+  <div class="col-offset-4">
+    <h2>Datos personales</h2>
+    <div class="row mb-3">
+      <label class="form-label">Email: </label>
+      <div class="col-sm-6">
+        <input
+          type="text"
+          class="form-control"
+          value="{{ usuario.email }}"
+          disabled
+        />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label class="form-label">Telefono: </label>
+      <div class="col-sm-6">
+        <input
+          type="text"
+          class="form-control"
+          value="{{ usuario.telefono }}"
+          disabled
+        />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label class="form-label">Servicio contratado:</label>
+      <div class="col-sm-6">
+        <input
+          type="text"
+          class="form-control"
+          value="{{ servicio.nombre }}"
+          disabled
+        />
+      </div>
+    </div>
+
+    <h2>Horarios</h2>
+    <ul>
+      <li class="" *ngFor="let horario of usuario.horarios">
+        {{ horario.dia }}, a las {{ horario.hora }}, tienes clase de
+        {{ horario.nombre }}
+      </li>
+    </ul>
+  </div>
+</div>

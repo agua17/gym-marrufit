@@ -22,6 +22,7 @@ export class MarrufitService {
 
   private baseUrl: string = 'http://localhost:8080/api';
 
+  // Consultas de usuario
   saveUsers(user: Users): Observable<any> {
     return this.httpClient.post<any>(`${this.baseUrl}/usuarios`, user);
   }
@@ -39,10 +40,18 @@ export class MarrufitService {
     );
   }
 
+  // Consulta de servicios
   getAllService() {
     return this.httpClient.get<Service[]>(`${this.baseUrl}/servicios`);
   }
 
+  getService(idServicio: number) {
+    return this.httpClient.get<Service>(
+      `${this.baseUrl}/servicios/${idServicio}`
+    );
+  }
+
+  // Consulta de horarios
   getHorariosServicio(servicioId: number) {
     return this.httpClient.get<Horario[]>(
       `${this.baseUrl}/horarios/servicios/${servicioId}`

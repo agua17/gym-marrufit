@@ -1,23 +1,43 @@
-<div *ngIf="this.usuario.id > 0">Bienvenido {{ usuario.nombre }}</div>
-<div class="menu">
-  <nav *ngIf="showNavBar" class="menu__option">
-    <button class="menu__option-1" [routerLink]="'/'">Principal</button>
-    <button class="menu__option-2" [routerLink]="'conocenos'">Conocenos</button>
-    <button class="menu__option-3" [routerLink]="'servicios'">Servicios</button>
-    <button
-      class="menu__option-4"
-      [routerLink]="'login'"
-      *ngIf="!(this.usuario.id > 0)"
+<nav
+  *ngIf="showNavBar"
+  class="navbar navbar-expand-lg navbar-light"
+  style="background-color: #ffccb3"
+>
+  <div *ngIf="this.usuario.id > 0" class="fw-semibold">
+    Bienvenido
+    <a
+      class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+      [routerLink]="'/detalleUsuario'"
+      >{{ usuario.nombre }}</a
     >
-      Iniciar Sesión
-    </button>
-    <button
-      class="menu__option-4"
-      (click)="logout()"
-      *ngIf="this.usuario.id > 0"
-    >
-      Salir
-    </button>
-    <button class="menu__option-5" [routerLink]="'horarios'">Horarios</button>
-  </nav>
-</div>
+  </div>
+
+  <div class="collapse navbar-collapse flex-grow-1 text-right">
+    <ul class="navbar-nav ms-auto flex-nowrap">
+      <li class="nav-item">
+        <a class="nav-link fw-semibold" [routerLink]="'/'">Principal </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fw-semibold" [routerLink]="'/conocenos'"
+          >Conocenos</a
+        >
+      </li>
+      <li class="nav-item" *ngIf="this.usuario.id > 0">
+        <a class="nav-link fw-semibold" [routerLink]="'/servicios'"
+          >Servicios</a
+        >
+      </li>
+      <li class="nav-item" *ngIf="!(this.usuario.id > 0)">
+        <a class="nav-link fw-semibold" [routerLink]="'/login'"
+          >Iniciar Sesión</a
+        >
+      </li>
+      <li class="nav-item" *ngIf="this.usuario.id > 0">
+        <a class="nav-link fw-semibold" (click)="logout()">Salir</a>
+      </li>
+      <li class="nav-item" *ngIf="this.usuario.id > 0">
+        <a class="nav-link fw-semibold" [routerLink]="'/horarios'">Horarios </a>
+      </li>
+    </ul>
+  </div>
+</nav>
