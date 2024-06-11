@@ -1,15 +1,30 @@
-@font-face {
-  font-family: "Retosta";
-  src: url("../../../../assets/fonts/Retosta.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-.information {
+.container {
   display: flex;
-  flex-direction: column;
-  &__title {
-    font-family: "Retosta";
-    font-size: 24px;
+  flex-direction: row;
+  justify-content: space-between;
+  .story {
+    &__content {
+      padding: 10px;
+      margin-bottom: 10px;
+
+      .story__title {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .story__text {
+        p {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &__image {
+      float: right; // Hace que la imagen esté a la derecha
+      width: 30%; // Ajusta el ancho de la imagen
+
+      margin-bottom: 20%;
+      margin-right: 10px;
+    }
   }
 }
