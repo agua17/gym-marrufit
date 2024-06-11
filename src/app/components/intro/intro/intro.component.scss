@@ -16,9 +16,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-
   &__photo {
-    height: 100%;
+    display: flex;
+    justify-content: flex-start;
   }
 
   &__text {
@@ -39,15 +39,9 @@
     font-size: 20px;
   }
 
-  &__icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
   &__icon-location {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
   }
   &__icon-register {
     width: 340px;
@@ -59,7 +53,6 @@
 .tooltipCustom {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */

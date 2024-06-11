@@ -1,6 +1,9 @@
 <div class="header">
   <div class="header__photo">
-    <img src="../../../../assets/images/foto_portada.svg" />
+    <img
+      src="../../../../assets/images/foto_portada.svg"
+      style="height: 950px"
+    />
   </div>
   <div class="header__text">
     <span class="header__text-title">
@@ -12,22 +15,22 @@
       ¡Únete a nosotros y convierte tu pasión por el fitness en una poderosa
       realidad!
     </p>
+    <div class="header__icon">
+      <div class="tooltipCustom">
+        <img
+          class="header__icon-location"
+          alt=""
+          src="../../../../assets/images/ubicacion.svg"
+        />
+        <span class="tooltiptext"
+          >Calle Nuestra Señora del Carmen, 4, 41720, Sevilla</span
+        >
+      </div>
+      <img
+        class="header__icon-register"
+        src="../../../../assets/images/registro.svg"
+        [routerLink]="'/registro'"
+      />
+    </div>
   </div>
-</div>
-<div class="header__icon">
-  <div class="tooltipCustom">
-    <img
-      class="header__icon-location"
-      alt=""
-      src="../../../../assets/images/ubicacion.svg"
-    />
-    <span class="tooltiptext"
-      >Calle Nuestra Señora del Carmen, 4, 41720, Sevilla</span
-    >
-  </div>
-  <img
-    class="header__icon-register"
-    src="../../../../assets/images/registro.svg"
-    [routerLink]="'/registro'"
-  />
 </div>
