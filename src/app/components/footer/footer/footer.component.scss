@@ -1,22 +1,28 @@
 .footer {
-  background-color: #333;
+  background-color: #ffccb3;
   color: white;
   text-align: center;
   padding: 20px;
-}
-
-.social-icons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  gap: 20px; /* Espacio entre los iconos */
 }
 
-.social-icons a {
-  color: white;
-  font-size: 24px;
-  transition: color 0.3s;
+.footer_instagram,
+.footer_facebook {
+  display: flex;
+  align-items: center;
 }
 
-.social-icons a:hover {
-  color: #1da1f2; /* Cambia este color según el diseño que prefieras */
+.footer_instagram-icon,
+.footer_facebook-icon {
+  width: 40px; /* Ajusta el tamaño según tus necesidades */
+  height: 40px; /* Ajusta el tamaño según tus necesidades */
+  transition: transform 0.3s;
+}
+
+.footer_instagram a:hover .footer_instagram-icon,
+.footer_facebook a:hover .footer_facebook-icon {
+  transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
 }

@@ -5,6 +5,7 @@ import { TimetablePageRoutingModule } from './timetable-page-routing.module';
 import { TimetablePageComponent } from './timetable-page/timetable-page.component';
 import { MenuModule } from '../../components/menu/menu.module';
 import { TimetableModule } from '../../components/timetable/timetable.module';
+import { FooterModule } from '../../components/footer/footer.module';
 
 @NgModule({
   declarations: [TimetablePageComponent],
@@ -13,6 +14,7 @@ import { TimetableModule } from '../../components/timetable/timetable.module';
     TimetablePageRoutingModule,
     MenuModule,
     TimetableModule,
+    FooterModule,
   ],
 })
 export class TimetablePageModule {}

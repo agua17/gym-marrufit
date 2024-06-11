@@ -5,6 +5,7 @@ import { RegisterPageRoutingModule } from './register-page-routing.module';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { RegistrationModule } from '../../components/registration/registration.module';
 import { MenuModule } from '../../components/menu/menu.module';
+import { FooterModule } from '../../components/footer/footer.module';
 
 @NgModule({
   declarations: [RegisterPageComponent],
@@ -13,6 +14,7 @@ import { MenuModule } from '../../components/menu/menu.module';
     RegisterPageRoutingModule,
     RegistrationModule,
     MenuModule,
+    FooterModule,
   ],
 })
 export class RegisterPageModule {}

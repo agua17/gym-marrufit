@@ -22,7 +22,13 @@
       placeholder="Contraseña"
     />
   </mat-form-field>
-  <button mat-button mat-flat-button color="primary" (click)="login()">
+  <button
+    mat-button
+    mat-flat-button
+    color="primary"
+    (click)="login()"
+    style="background-color: #fa7b54"
+  >
     Enviar
   </button>
   <div class="flex justify-content-end mt-5">
@@ -32,6 +38,7 @@
         mat-flat-button
         color="secondary"
         [routerLink]="'registro'"
+        style="border: 2px solid #ff5722; border-radius: 20px; color: #812104"
       >
         ¿Quieres registrarte?
       </button>

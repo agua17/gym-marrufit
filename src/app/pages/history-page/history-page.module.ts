@@ -5,6 +5,7 @@ import { HistoryPageRoutingModule } from './history-page-routing.module';
 import { HistoryPageComponent } from './history-page/history-page.component';
 import { InformationModule } from '../../components/information/information.module';
 import { MenuModule } from '../../components/menu/menu.module';
+import { FooterModule } from '../../components/footer/footer.module';
 
 @NgModule({
   declarations: [HistoryPageComponent],
@@ -13,6 +14,7 @@ import { MenuModule } from '../../components/menu/menu.module';
     HistoryPageRoutingModule,
     InformationModule,
     MenuModule,
+    FooterModule,
   ],
 })
 export class HistoryPageModule {}

@@ -4,6 +4,7 @@ import { UserDetailPageComponent } from './user-detail-page/user-detail-page.com
 import { UserDetailPageRoutingModule } from './user-datail-page-routing.module';
 import { MenuModule } from '../../components/menu/menu.module';
 import { UserDetailModule } from '../../components/user-detail/user-detail.module';
+import { FooterModule } from '../../components/footer/footer.module';
 
 @NgModule({
   declarations: [UserDetailPageComponent],
@@ -12,6 +13,7 @@ import { UserDetailModule } from '../../components/user-detail/user-detail.modul
     UserDetailPageRoutingModule,
     MenuModule,
     UserDetailModule,
+    FooterModule,
   ],
 })
 export class UserDetailPageModule {}

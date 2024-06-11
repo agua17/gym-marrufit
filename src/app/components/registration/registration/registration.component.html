@@ -55,12 +55,22 @@
       placeholder="Contraseña"
     />
   </mat-form-field>
-  <button mat-button mat-flat-button color="primary" (click)="saveUser()">
+  <button
+    style="background-color: #fa7b54"
+    mat-button
+    mat-flat-button
+    color="primary"
+    (click)="saveUser()"
+  >
     Enviar
   </button>
   <div class="flex justify-content-end mt-5">
     <nav *ngIf="showNavBar" class="menu__option">
-      <button class="menu__option-4" [routerLink]="'login'">
+      <button
+        style="border: 2px solid #ff5722; border-radius: 20px; color: #be3207"
+        class="menu__option-4"
+        [routerLink]="'login'"
+      >
         ¿Ya estás registrado?
       </button>
     </nav>

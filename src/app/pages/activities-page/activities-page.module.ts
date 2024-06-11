@@ -6,6 +6,7 @@ import { ActivitiesPageComponent } from './activities-page/activities-page.compo
 import { TimetableModule } from '../../components/timetable/timetable.module';
 import { GymsesionModule } from '../../components/gymsesion/gymsesion.module';
 import { MenuModule } from '../../components/menu/menu.module';
+import { FooterModule } from '../../components/footer/footer.module';
 
 @NgModule({
   declarations: [ActivitiesPageComponent],
@@ -14,6 +15,7 @@ import { MenuModule } from '../../components/menu/menu.module';
     ActivitiesPageRoutingModule,
     GymsesionModule,
     MenuModule,
+    FooterModule,
   ],
 })
 export class ActivitiesPageModule {}
